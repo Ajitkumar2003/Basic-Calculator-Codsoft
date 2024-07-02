@@ -1,0 +1,86 @@
+/* Reset some default styles */
+body, h1, h2, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General body styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #ffecd2, #fcb69f);
+    font-family: Arial, sans-serif;
+}
+
+/* Calculator container */
+.calculator {
+    width: 320px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Display screen styling */
+.display {
+    background: #333;
+    color: #fff;
+    font-size: 2.5em;
+    text-align: right;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Buttons container */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+}
+
+/* Button styling */
+.btn {
+    border: none;
+    padding: 20px;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+/* Colorful button categories */
+.function {
+    background: #ff9a8b; /* Light Coral */
+    color: #fff;
+}
+
+.operator {
+    background: #ff6f61; /* Red-Orange */
+    color: #fff;
+}
+
+.number {
+    background: #ffca76; /* Yellow */
+    color: #333;
+}
+
+.equal {
+    grid-column: span 2;
+    background: #4caf50; /* Green */
+    color: #fff;
+}
+
+.zero {
+    grid-column: span 2;
+}
+
+/* Ensure the buttons take up the whole container */
+.buttons button {
+    width: 100%;
+    height: 100%;
+}
